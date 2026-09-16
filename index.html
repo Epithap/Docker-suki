@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Juara LKS</title>
+    <style>
+        body { margin: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #121212; color: #ffffff; text-align: center; }
+        header { padding: 60px 20px; background: linear-gradient(135deg, #11998e, #38ef7d); box-shadow: 0 4px 10px rgba(0,0,0,0.5); }
+        h1 { font-size: 3em; margin: 0; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
+        p { font-size: 1.2em; color: #f0f0f0; margin-top: 10px; }
+        .container { padding: 50px 20px; }
+        .card { background: #1e1e1e; padding: 25px; border-radius: 12px; display: inline-block; margin: 15px; width: 300px; box-shadow: 0 4px 15px rgba(0,0,0,0.5); transition: transform 0.3s, box-shadow 0.3s; border-top: 4px solid #38ef7d; }
+        .card:hover { transform: translateY(-10px); box-shadow: 0 8px 25px rgba(56, 239, 125, 0.4); }
+        button { padding: 12px 25px; border: none; border-radius: 25px; background-color: #38ef7d; color: #121212; cursor: pointer; font-size: 1.1em; font-weight: bold; margin-top: 30px; transition: background 0.3s; }
+        button:hover { background-color: #11998e; color: white; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="typing-text"></h1>
+        <p>🚀 Cloud & DevOps Engineer | AWS Expert</p>
+    </header>
+    <div class="container">
+        <h2>🛠️ Tech Stack & Skills</h2>
+        <div class="card">
+            <h3>☁️ AWS Cloud</h3>
+            <p>Mampu mendesain arsitektur menggunakan EC2, S3, RDS, Load Balancer, dan Auto Scaling.</p>
+        </div>
+        <div class="card">
+            <h3>⚙️ CI/CD & Docker</h3>
+            <p>Berpengalaman membuat robot otomatisasi dengan GitHub Actions dan membungkus aplikasi dengan Docker.</p>
+        </div>
+        <br>
+        <button onclick="alert('GACOR PARAH KANG! Siap Bawa Pulang Medali LKS! 🏆')">Hire Me!</button>
+    </div>
+
+    <script>
+        const text = "Halo, Saya Pejuang LKS!";
+        let i = 0;
+        function typeWriter() {
+            if (i < text.length) {
+                document.getElementById("typing-text").innerHTML += text.charAt(i);
+                i++;
+                setTimeout(typeWriter, 80);
+            }
+        }
+        window.onload = typeWriter;
+    </script>
+</body>
+</html>
